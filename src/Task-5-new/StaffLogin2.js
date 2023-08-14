@@ -49,7 +49,7 @@ function StaffLogin2() {
                     </Typography>
             </div>
             <div style={{ height: "max-content", border: "1px solid", display: "flex", flexWrap:"wrap", margin: "1% auto 0" }}>
-            {staffleave.map((staff) => {
+            {staffleave && staffleave.map((staff) => {
                 return <Card className={classes.box} sx={{ maxWidth: "350px", border: "2px solid", padding: "5px", margin: "20px" }}>
                 <CardContent>
                     <Typography variant="h5" component="div" sx={{ fontSize: "16px" }}>

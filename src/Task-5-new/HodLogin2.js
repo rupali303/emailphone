@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Box from '@mui/material/Box';
+// import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -61,7 +61,7 @@ function HodLogin2() {
                 <button onClick={handleLogout} style={{ marginLeft: "auto", padding: "5px", backgroundColor: "rgb(53, 141, 213)", marginRight: "20px", width: "80px", border: "1px solid", borderRadius: "5px" }}>Logout</button>
             </div>
             <div style={{ height: "max-content", width: "90vw", border: "2px solid", display: "flex", flexDirection: "row", flexWrap: "wrap", margin: "0 auto", borderTop: "none" }}>
-                {(allLeavesData.filter((leaves) => leaves.department == logPerson.department)).map((staff) => {
+                {(allLeavesData && allLeavesData.filter((leaves) => leaves.department === logPerson.department)).map((staff) => {
                     return <Card sx={{ border: "2px solid", padding: "5px", margin: "20px", display: "inline-block", height: "max-content", width: "max-content" }}>
                         <CardContent>
                             <Typography sx={{ fontSize: "20px" }}>

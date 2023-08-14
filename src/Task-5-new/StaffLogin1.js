@@ -111,7 +111,7 @@ function StaffLogin1() {
         {data && staffleave ? <div style={{ height: "100%", width: "100%", padding: "10px" }}>
           <h4 style={{ color: "red", fontWeight: "600", fontSize: "25px" }}>Number of leaves applied: {staffleave.length}</h4>
           <h4 style={{ color: "red", fontWeight: "600", fontSize: "25px" }}>Leave Details : </h4>
-          {staffleave.map((staff) => {
+          {staffleave && staffleave.map((staff) => {
             return <Card className={classes.box} sx={{ maxWidth: "350px", border: "2px solid", padding: "5px", margin: "20px" }}>
               <CardContent>
                 <Typography variant="h5" component="div" sx={{ fontSize: "16px" }}>
