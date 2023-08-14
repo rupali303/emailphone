@@ -1,0 +1,64 @@
+.Acc {
+    display: flex;
+    width: 100%;
+    margin: 30px auto;
+  }
+  .add {
+    padding: 15px;
+    width: 30%;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: 300px;
+  }
+  .add h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .accord {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 70%;
+    border: 2px solid rgb(16, 16, 16);
+    word-wrap: break-word;
+    margin-left: 20px;
+    }
+  input {
+    width: 93%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 7px 0;
+  }
+  .custom-button {
+    background-color:blue;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50%;
+    margin: 10px 0;
+  }
+  .accord {
+    padding: 20px;
+  }
+  .p-accordion-header a {
+    font-size: 18px;
+    color: #121010;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f8f6d3;
+    display: block;
+    border: #151515 1px solid;
+  }
+  .p-accordion-content {
+    background-color: #fff;
+    padding: 10px;
+    font-size: 13px;
+    border: black 1px solid;
+  }
+  
